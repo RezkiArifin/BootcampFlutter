@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanber_app/tugas/tugas10/home_screen.dart';
+import 'package:sanber_app/main.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -113,7 +113,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const HomeScreen()));
+                        builder: (context) =>
+                            const BottomNavigationBarExample()));
                   },
                   child: const Text(
                     'Login',
