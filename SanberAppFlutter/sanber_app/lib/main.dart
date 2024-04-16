@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sanber_app/tugas/tugas10/home_screen.dart';
+import 'package:sanber_app/tugas/tugas12/get_data.dart';
 
 import 'tugas/tugas10/login_screen.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const GetDataScreen(),
     );
   }
 }
