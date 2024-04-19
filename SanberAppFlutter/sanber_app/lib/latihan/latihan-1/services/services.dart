@@ -15,13 +15,12 @@ class Services {
 
       if (response.statusCode == 200) {
         List jsonresponse = convert.jsonDecode(response.body);
-        return jsonresponse.map((e) => Postmodel.fromJson(e)).toList();
+        return jsonresponse.map((e) => new Postmodel.fromJson(e)).toList();
       } else {
         return null;
       }
     } on TimeoutException catch (_) {
       print("response time out");
     }
-    return null;
   }
 }

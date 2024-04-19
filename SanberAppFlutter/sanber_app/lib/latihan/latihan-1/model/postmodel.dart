@@ -12,16 +12,16 @@ class Postmodel {
     required this.title,
     required this.body,
   });
-  int userId;
-  int id;
-  String title;
-  String body;
+  final int userId;
+  final int id;
+  final String title;
+  final String body;
 
   factory Postmodel.fromJson(Map<String, dynamic> json) => Postmodel(
-        userId: json["userId"],
-        id: json["Id"],
-        title: json["title"],
-        body: json["body"],
+        userId: json["userId"] ?? 0,
+        id: json["Id"] ?? 0,
+        title: json["title"] ?? "",
+        body: json["body"] ?? "",
       );
 
   Map<String, dynamic> toJson() => {
