@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanber_app/latihan/get_data_screen.dart';
 import 'package:sanber_app/tugas/tugas10/home_screen.dart';
 import 'package:sanber_app/tugas/tugas13/pages/splash_screen/splash_screen.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const GetDataScreenStateManagement(),
     );
   }
 }
