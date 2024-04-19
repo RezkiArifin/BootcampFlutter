@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sanber_app/latihan/get_data_screen.dart';
+import 'package:sanber_app/latihan/latihan-2/pages/page_1.dart';
+import 'package:sanber_app/latihan/latihan-2/routes/pages_routes.dart';
 import 'package:sanber_app/tugas/tugas10/home_screen.dart';
 import 'package:sanber_app/tugas/tugas13/pages/splash_screen/splash_screen.dart';
 
@@ -12,14 +15,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const GetDataScreenStateManagement(),
+      home: const PageOne(),
+      getPages: PagesRoutesApp.pages,
     );
   }
 }
